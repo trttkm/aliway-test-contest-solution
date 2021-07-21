@@ -1,25 +1,31 @@
 <template>
   <div id="app">
-
+    <InfluencerList />
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue';
+import InfluencerList from '@/components/InfluencerList.vue';
 
-export default {
+export default Vue.extend({
   name: 'App',
-  components: {
-  },
-};
+  components: { InfluencerList },
+});
 </script>
 
 <style>
+body {
+  background-color: #fafafa;
+}
+
 #app {
-  font-family:             Avenir, Helvetica, Arial, sans-serif;
+  font-family:             "Droid Sans", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing:  antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align:              center;
   color:                   #2c3e50;
   margin-top:              60px;
+  display:                 flex;
+  justify-content:         center;
 }
 </style>
