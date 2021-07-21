@@ -100,7 +100,7 @@ tr {
     border-bottom: none;
   }
 
-  &:hover {
+  tbody &:hover {
     background-color: #e9fffa;
   }
 }
